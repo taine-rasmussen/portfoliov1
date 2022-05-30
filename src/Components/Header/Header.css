@@ -27,6 +27,7 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 .header_socials::after {
@@ -53,10 +54,10 @@ header {
 .scroll_down {
   position: absolute;
   right: -2.3rem;
-  bottom: 8rem;
+  bottom: 8.2rem;
   transform: rotate(90deg);
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /*  --- media quires --- */
