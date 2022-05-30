@@ -48,3 +48,13 @@ header {
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
+
+/*  --- Scroll down --- */
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 8rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
