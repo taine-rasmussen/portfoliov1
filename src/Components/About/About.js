@@ -14,7 +14,7 @@ const About = () => {
       <h2>About me</h2>
 
       <div className='container about_container'>
-        <div className='about_me'>
+        <div className='about-me'>
           <div className='about_me_image'>
             <img src={profileImg} alt='Profile Image' />
           </div>
@@ -38,6 +38,15 @@ const About = () => {
               <small>30+ completed projects  </small>
             </article>
           </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam enim, facilisis nec tempor sed, placerat sit amet tellus. Nunc malesuada fermentum convallis. Cras dui ex, dapibus vitae dapibus vel.
+          </p>
+          <button
+            className='btn btn-primary'
+            href='#contact'
+          >
+            Lets talk
+          </button>
         </div>
       </div>
     </section>
