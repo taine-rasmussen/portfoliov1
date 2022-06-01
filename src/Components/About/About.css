@@ -23,3 +23,44 @@
 .about-me img:hover {
   transform: rotate(0deg);
 }
+
+.about_card {
+  background-color: var(--colour-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about_card:hover {
+  background: transparent;
+  border-color: var(--colour-primary-variant);
+  cursor: default;
+}
+
+.about_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about_card h5 {
+  font-size: 0.95rem;
+}
+
+.about_card small {
+  font-size: 0.7rem;
+  color: var(--colour-light);
+}
+
+.about_icon {
+  color: var(--colour-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about_content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--colour-light);
+}
