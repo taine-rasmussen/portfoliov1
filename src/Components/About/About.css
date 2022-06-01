@@ -16,7 +16,7 @@
 .about-me img {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  transform: rotate(5deg);
   transition: var(--transition);
 }
 
@@ -63,4 +63,38 @@
 .about_content p {
   margin: 2rem 0 2.6rem;
   color: var(--colour-light);
+}
+
+@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about_me {
+    margin: 2rem auto 4rem;
+    width: 50%;
+  }
+  .about_content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about_cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about_content {
+    text-align: center;
+  }
+
+  .about_content p {
+    margin: 1.5rem 0;
+  }
 }
