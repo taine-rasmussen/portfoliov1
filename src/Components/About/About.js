@@ -2,6 +2,10 @@ import React from 'react'
 import './About.css'
 import profileImg from '../../assets/profile.jpeg'
 import { FaAward } from 'react-icons/fa'
+import { FiUsers } from 'react-icons/fi'
+import { BsFillFolderFill } from 'react-icons/bs'
+
+
 
 const About = () => {
   return (
@@ -19,11 +23,20 @@ const About = () => {
         <div className='about_content'>
           <div className='about_cards'>
             <article className='about_card'>
-              <FaAward />
-              <h5>experience</h5>
+              <FaAward className='about_icon' />
+              <h5>Experience</h5>
               <small>1 year working </small>
             </article>
-
+            <article className='about_card'>
+              <FiUsers className='about_icon' />
+              <h5>Clients</h5>
+              <small>999</small>
+            </article>
+            <article className='about_card'>
+              <BsFillFolderFill className='about_icon' />
+              <h5>Projects</h5>
+              <small>30+ completed projects  </small>
+            </article>
           </div>
         </div>
       </div>
