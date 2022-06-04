@@ -50,12 +50,12 @@ const About = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam enim, facilisis nec tempor sed, placerat sit amet tellus. Nunc malesuada fermentum convallis. Cras dui ex, dapibus vitae dapibus vel.
           </p>
-          <button
+          <a
             className='btn btn-primary'
             href='#contact'
           >
             Lets talk
-          </button>
+          </a>
         </div>
       </div>
     </section>
