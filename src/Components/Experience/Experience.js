@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Experience.css'
+import { ActiveNavContext } from '../../ActiveNavContext'
+
 
 const Experience = () => {
+  const {
+    setActiveNav
+  } = useContext(ActiveNavContext)
   return (
-    <section id='experience'>
+    <section
+      id='experience'
+      onMouseEnter={() => { setActiveNav('experience') }}
+    >
       <h5>What skills I have</h5>
       <h2>My Experience</h2>
 

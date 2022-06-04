@@ -5,14 +5,16 @@ import Socials from './Socials'
 import { ActiveNavContext } from '../../ActiveNavContext'
 
 const Header = () => {
+  const {
+    setActiveNav
+  } = useContext(ActiveNavContext)
 
-  const msg = useContext(ActiveNavContext)
-
-
-  console.log(msg)
   return (
     <header>
-      <div className="container header_container">
+      <div
+        className="container header_container"
+        onMouseEnter={() => { setActiveNav('#') }}
+      >
         <h5>Hello I'm</h5>
         <h1>Taine Rasmussen</h1>
         <h5 className="text-light">Fullstack Developer</h5>

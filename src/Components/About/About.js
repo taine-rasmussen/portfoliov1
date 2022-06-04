@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './About.css'
 import profileImg from '../../assets/profile.jpeg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { BsFillFolderFill } from 'react-icons/bs'
+import { ActiveNavContext } from '../../ActiveNavContext'
 
 
 
 const About = () => {
+  const {
+    setActiveNav
+  } = useContext(ActiveNavContext)
+
+
   return (
-    <section id='about'>
+    <section
+      id='about'
+      onMouseEnter={() => { setActiveNav('about') }}
+    >
       <h5>Get to know</h5>
       <h2>About me</h2>
 
