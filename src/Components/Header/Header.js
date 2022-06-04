@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.css'
 import CTA from './CTA'
 import Socials from './Socials'
-import profile from '../../assets/profile.jpeg'
+import { ActiveNavContext } from '../../ActiveNavContext'
 
 const Header = () => {
+
+  const msg = useContext(ActiveNavContext)
+
+
+  console.log(msg)
   return (
     <header>
       <div className="container header_container">

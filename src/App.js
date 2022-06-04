@@ -1,4 +1,6 @@
 import './App.css';
+import { useContext } from 'react'
+import { ActiveNavContext } from './ActiveNavContext'
 
 // Components
 import Header from './Components/Header/Header'
@@ -9,16 +11,19 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 
+
 function App() {
   return (
     <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <ActiveNavContext.Provider value='context'>
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </ActiveNavContext.Provider>
     </>
   );
 }
