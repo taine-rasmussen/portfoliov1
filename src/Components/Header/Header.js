@@ -21,3 +21,7 @@ const Header = () => {
 }
 
 export default Header
+
+
+// if mouse enters a div update nav bar state
+// will need global state - useContext?
