@@ -30,6 +30,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
+  height: max-content;
 }
 
 .experience_details {
@@ -40,4 +41,27 @@
 .experience_details-icon {
   margin-top: 6px;
   color: var(--colour-primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .experince_container div {
+    width: 80%;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+
+  .experince_content {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experince_container {
+    gap: 1rem;
+  }
+
+  .experince_container div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
 }
