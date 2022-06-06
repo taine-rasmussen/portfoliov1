@@ -69,7 +69,10 @@ const Portfolio = () => {
 
 
   return (
-    <section id='portfolio'>
+    <section
+      id='portfolio'
+      onMouseEnter={() => { setActiveNav('portfolio') }}
+    >
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
 
