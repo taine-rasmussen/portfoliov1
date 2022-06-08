@@ -87,7 +87,7 @@ const Portfolio = () => {
         <Swiper pagination={true} modules={[Pagination]} className='swiper'>
           {data.map((d, i) => {
             return (
-              <SwiperSlide className='swiper-slide'>
+              <SwiperSlide>
                 <article className='portfolio_item'>
                   <div className='portfolio_item-image'>
                     <img src={IMG} alt='profile' />
