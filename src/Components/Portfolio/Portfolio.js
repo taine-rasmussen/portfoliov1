@@ -88,11 +88,24 @@ const Portfolio = () => {
           {data.map((d, i) => {
             return (
               <SwiperSlide className='swiper-slide'>
-                <a
-                  href='http://github.com'
-                  className='btn'
-                  target='_blank'
-                >{d.id}</a>
+                <article className='portfolio_item'>
+                  <div className='portfolio_item-image'>
+                    <img src={IMG} alt='profile' />
+                  </div>
+                  <h3>{d.id}</h3>
+                  <div className='portfolio_item-cta'>
+                    <a
+                      href='http://github.com'
+                      className='btn'
+                      target='_blank'
+                    >Github</a>
+                    <a
+                      href='http://github.com/taine-rasmussen'
+                      className='btn btn-primary'
+                      target='_blank'
+                    >Live Demo</a>
+                  </div>
+                </article>
               </SwiperSlide>
             )
           })}
