@@ -17,14 +17,13 @@ const Contact = () => {
     >
       <h5>Get in touch</h5>
       <h2>Contact Me</h2>
-
       <div className='container contact_container'>
         <div className='contact_options'>
           <article className='contact_option'>
             <MdOutlineEmail />
             <h4>Email</h4>
             <h5>taine.rasmussen@gmail.com</h5>
-            <a href='taine.rasmussen@gmail.com'>Send a message</a>
+            <a href='mailto:taine.rasmussen@gmail.com'>Send a message</a>
           </article>
           <article className='contact_option'>
             <BsLinkedin />
@@ -33,7 +32,12 @@ const Contact = () => {
             <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/'>Send a message</a>
           </article>
         </div>
+        <form
+          action=''
+        >
 
+
+        </form>
       </div>
     </section>
   )
