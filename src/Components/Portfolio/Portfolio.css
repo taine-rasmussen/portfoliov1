@@ -12,10 +12,8 @@
   transition: var(--transition);
 }
 
-.portfolio_item:hover {
-  /* border-color: var(--colour-primary-variant); */
-  /* background: transparent; */
-  transform: scale(1.05);
+.swiper:hover {
+  transform: scale(1.015);
 }
 
 .portfolio_item-image {
@@ -48,11 +46,12 @@
 }
 
 .swiper {
-  width: 80vw;
-  height: 80vh;
+  width: 300px;
+  height: 260px;
   border-radius: 2rem;
   border: 2px solid var(--colour-white);
   background: 0;
+  transition: var(--transition);
 }
 
 .swiper-slide {
