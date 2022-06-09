@@ -20,16 +20,16 @@ const Contact = () => {
       <div className='container contact_container'>
         <div className='contact_options'>
           <article className='contact_option'>
-            <MdOutlineEmail />
+            <MdOutlineEmail className='contact_icon' />
             <h4>Email</h4>
             <h5>taine.rasmussen@gmail.com</h5>
             <a href='mailto:taine.rasmussen@gmail.com' target='_blank'>Send a message</a>
           </article>
           <article className='contact_option'>
-            <BsLinkedin />
+            <BsLinkedin className='contact_icon' />
             <h4>Linkedin</h4>
             <h5>Taine Rasmussen</h5>
-            <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/' target='_blank'>Send a message</a>
+            <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/' target='_blank'>Visit profile</a>
           </article>
         </div>
         <form
@@ -51,7 +51,7 @@ const Contact = () => {
             name='message'
             rows='7'
             placeholder='Your message'
-          />
+          ></textarea>
           <button
             type='submit'
             className='btn btn-primary'
