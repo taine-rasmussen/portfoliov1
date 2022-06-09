@@ -23,13 +23,13 @@ const Contact = () => {
             <MdOutlineEmail />
             <h4>Email</h4>
             <h5>taine.rasmussen@gmail.com</h5>
-            <a href='mailto:taine.rasmussen@gmail.com'>Send a message</a>
+            <a href='mailto:taine.rasmussen@gmail.com' target='_blank'>Send a message</a>
           </article>
           <article className='contact_option'>
             <BsLinkedin />
             <h4>Linkedin</h4>
             <h5>Taine Rasmussen</h5>
-            <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/'>Send a message</a>
+            <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/' target='_blank'>Send a message</a>
           </article>
         </div>
         <form
