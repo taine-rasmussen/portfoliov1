@@ -2,6 +2,9 @@ import React, { useContext } from 'react'
 import './Portfolio.css'
 import IMG from '../../assets/portfolio1.jpg'
 import IMG1 from '../../assets/portfolio2.jpg'
+import wordleImg1 from '../../assets/wordle1.png'
+import wordleImg2 from '../../assets/wordle2.png'
+import wordleImg3 from '../../assets/wordle3.png'
 import { ActiveNavContext } from '../../ActiveNavContext'
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,8 +26,8 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      images: [IMG, IMG1],
-      title: 'Example project name',
+      images: [wordleImg3, wordleImg1, wordleImg2],
+      title: 'Wordle clone',
       github: 'http://github.com',
       demo: 'http://github.com/taine-rasmussen'
     },
