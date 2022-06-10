@@ -78,7 +78,7 @@ const Portfolio = () => {
                   ))}
                 </div>
               </Swiper >
-              <h3>{d.id}</h3>
+              <h3>{d.title}</h3>
               <div className='portfolio_item-cta'>
                 <a
                   href='http://github.com'

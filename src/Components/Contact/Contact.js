@@ -62,7 +62,7 @@ const Contact = () => {
             placeholder='Your message'
           />
           <input
-            className='btn btn-primary'
+            className='btn btn-primary send'
             type="submit"
             value="Send"
           />
