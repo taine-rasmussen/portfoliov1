@@ -68,6 +68,11 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .contact_option {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
