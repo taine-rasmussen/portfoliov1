@@ -1,14 +1,27 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import { ActiveNavContext } from '../../ActiveNavContext'
 import './Contact.css'
 import { MdOutlineEmail } from 'react-icons/md'
 import { BsLinkedin } from 'react-icons/bs'
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
   const {
     setActiveNav
   } = useContext(ActiveNavContext)
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_vfkw5ts', 'template_bm3v122', form.current, 'user_07A1Lkmj3NdwJpVweNfNQ')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
   return (
     <section
@@ -32,30 +45,27 @@ const Contact = () => {
             <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/' target='_blank'>Visit profile</a>
           </article>
         </div>
-        <form
-          action=''
-        >
+        <form ref={form} onSubmit={sendEmail}>
           <input
-            type='text'
-            name='name'
+            type="text"
+            name="user_name"
             placeholder='Your full name'
-            required
           />
           <input
-            type='email'
-            name='email'
+            type="email"
+            name="user_email"
             placeholder='Your email here'
-            required
           />
           <textarea
-            name='message'
+            name="message"
             rows='7'
             placeholder='Your message'
-          ></textarea>
-          <button
-            type='submit'
+          />
+          <input
             className='btn btn-primary'
-          >Send Message</button>
+            type="submit"
+            value="Send"
+          />
         </form>
       </div>
     </section>
