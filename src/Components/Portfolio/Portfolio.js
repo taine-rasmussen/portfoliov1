@@ -28,7 +28,7 @@ const Portfolio = () => {
       id: 2,
       images: [wordleImg3, wordleImg1, wordleImg2],
       title: 'Wordle clone',
-      github: 'http://github.com',
+      github: 'https://github.com/taine-rasmussen/not-wordle',
       demo: 'http://github.com/taine-rasmussen'
     },
     {
@@ -84,7 +84,7 @@ const Portfolio = () => {
               <h3>{d.title}</h3>
               <div className='portfolio_item-cta'>
                 <a
-                  href='http://github.com'
+                  href={d.github}
                   className='btn'
                   target='_blank'
                 >Github</a>
