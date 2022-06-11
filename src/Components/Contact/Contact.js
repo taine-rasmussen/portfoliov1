@@ -5,7 +5,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { BsLinkedin } from 'react-icons/bs'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-toast.configure()
+// toast.configure()
 
 const Contact = () => {
   const {
@@ -33,7 +33,6 @@ const Contact = () => {
       id='contact'
       onMouseEnter={() => { setActiveNav('contact') }}
     >
-      <button onClick={notify}>Click Me!</button>
       <h5>Get in touch</h5>
       <h2>Contact Me</h2>
       <div className='container contact_container'>
