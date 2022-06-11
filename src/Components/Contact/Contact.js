@@ -21,6 +21,11 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
+    resetForm();
+  };
+
+  const resetForm = () => {
+    document.getElementById('form').reset();
   };
 
   return (
@@ -45,7 +50,7 @@ const Contact = () => {
             <a href='https://www.linkedin.com/in/taine-rasmussen-a66a86184/' target='_blank'>Visit profile</a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} id='form'>
           <input
             type="text"
             name="user_name"
