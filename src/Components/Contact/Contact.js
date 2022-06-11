@@ -5,7 +5,6 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { BsLinkedin } from 'react-icons/bs'
 import emailjs from '@emailjs/browser';
 
-
 const Contact = () => {
   const {
     setActiveNav
@@ -21,12 +20,8 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
-    resetForm();
   };
 
-  const resetForm = () => {
-    document.getElementById('form').reset();
-  };
 
   return (
     <section
