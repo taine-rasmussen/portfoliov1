@@ -14,10 +14,6 @@ const Contact = () => {
 
   const form = useRef();
 
-  const notify = () => {
-    toast('Hello Geeks')
-  }
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_vfkw5ts', 'template_bm3v122', form.current, 'user_07A1Lkmj3NdwJpVweNfNQ')
