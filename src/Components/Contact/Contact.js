@@ -22,7 +22,12 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
+    resetFrom();
   };
+
+  const resetFrom = () => {
+    document.getElementById("form").reset();
+  }
 
   return (
     <section
