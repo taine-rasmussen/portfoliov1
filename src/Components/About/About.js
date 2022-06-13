@@ -43,7 +43,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam enim, facilisis nec tempor sed, placerat sit amet tellus. Nunc malesuada fermentum convallis. Cras dui ex, dapibus vitae dapibus vel.
+            I'm a FullStack developer fresh off the plane from the colonies ( New Zealand ) where I have spent the last year and half starting my new career in tech through a bootcamp before working for local Saas company AskYourTeam as a jr Dev. Now based in London I am exicted ( a bit scared and nervous really tbh ) to see what opportunities come next. If that's you lets have chat.
           </p>
           <a
             className='btn btn-primary'
