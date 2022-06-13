@@ -37,11 +37,6 @@ const About = () => {
               <small>1 year working </small>
             </article>
             <article className='about_card'>
-              <FiUsers className='about_icon' />
-              <h5>Clients</h5>
-              <small>999</small>
-            </article>
-            <article className='about_card'>
               <BsFillFolderFill className='about_icon' />
               <h5>Projects</h5>
               <small>30+ completed projects  </small>

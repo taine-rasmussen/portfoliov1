@@ -45,6 +45,10 @@
   gap: 1.5rem;
 }
 
+.about_card {
+  width: 15rem;
+}
+
 .about_card h5 {
   font-size: 0.95rem;
 }
