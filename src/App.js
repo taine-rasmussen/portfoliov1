@@ -8,8 +8,7 @@ import Nav from './Components/Nav/Nav'
 import About from './Components/About/About'
 import Experience from './Components/Experience/Experience'
 import Portfolio from './Components/Portfolio/Portfolio'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
+import Contact from './Components/Contact/Contact's
 
 function App() {
   const [activeNav, setActiveNav] = useState('#')
@@ -23,7 +22,6 @@ function App() {
         <Experience />
         <Portfolio />
         <Contact />
-        <Footer />
       </ActiveNavContext.Provider>
     </>
   );
