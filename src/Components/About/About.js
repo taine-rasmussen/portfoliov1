@@ -36,10 +36,17 @@ const About = () => {
               <h5>Experience</h5>
               <small>1 year working </small>
             </article>
-            <article className='about_card'>
-              <BsFillFolderFill className='about_icon' />
-              <h5>Projects</h5>
-              <small>30+ completed projects  </small>
+            <article 
+              className='about_card hover'
+            >
+              <a
+                href="https://github.com/taine-rasmussen"
+                target="_blank"
+              >
+                <BsFillFolderFill className='about_icon' />
+                <h5>Projects</h5>
+                <small>30+ completed projects  </small>
+              </a>
             </article>
           </div>
           <p>
