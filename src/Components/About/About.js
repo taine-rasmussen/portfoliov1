@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import './About.css'
 import profileImg from '../../assets/profile.jpeg'
 import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
 import { BsFillFolderFill } from 'react-icons/bs'
 import { ActiveNavContext } from '../../ActiveNavContext'
 
