@@ -21,7 +21,7 @@ const Header = () => {
         <CTA />
         <Socials />
 
-        <a href='#contact' className="scroll_down">Scroll Down</a>
+        <a href='#about' className="scroll_down">Scroll Down</a>
       </div>
     </header>
   )
