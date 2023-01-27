@@ -50,7 +50,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            I'm a FullStack developer fresh off the plane from New Zealand where I have spent the last year and half starting my new career in tech through a bootcamp before working for local Saas company AskYourTeam.  Now based in London I am exicted to see what opportunities come next. If that's you lets have chat.
+            As a recent arrival to London, I am a highly motivated Full Stack developer with a solid foundation in technology acquired through a bootcamp and professional experience gained while working for a SaaS company in New Zealand. I am eager to explore new opportunities and am open to discussing potential job openings          
           </p>
           <a
             className='btn btn-primary'
