@@ -14,6 +14,7 @@
 
 .swiper:hover {
   transform: scale(1.015);
+  cursor: grabbing;
 }
 
 .portfolio_item-image {

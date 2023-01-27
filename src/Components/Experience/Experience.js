@@ -20,6 +20,8 @@ const Experience = () => {
     { language: 'Ruby', experience: 'Basic' },
     { language: 'Node JS', experience: 'Intermidate' },
     { language: 'MySQL', experience: 'Basic' },
+    { language: 'Postgres', experience: 'Basic' },
+    { language: 'MongoDB', experience: 'Basic' }
   ]
 
 
