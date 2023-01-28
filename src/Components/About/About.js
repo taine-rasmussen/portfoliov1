@@ -20,7 +20,6 @@ const About = () => {
     >
       <h5>Get to know</h5>
       <h2>About me</h2>
-
       <div className='container about_container'>
         <div className='about-me'>
           <div className='about_me_image'>
