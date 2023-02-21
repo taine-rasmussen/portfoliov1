@@ -5,6 +5,10 @@ import IMG1 from '../../assets/portfolio2.jpg'
 import wordleImg1 from '../../assets/wordle1.png'
 import wordleImg2 from '../../assets/wordle2.png'
 import wordleImg3 from '../../assets/wordle3.png'
+import socialImg1 from '../../assets/social1.png'
+import socialImg2 from '../../assets/social2.png'
+import socialImg3 from '../../assets/social3.png'
+import socialImg4 from '../../assets/social4.png'
 import { ActiveNavContext } from '../../ActiveNavContext'
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,9 +23,9 @@ const Portfolio = () => {
   const data = [
     {
       id: 1,
-      images: [IMG, IMG1],
-      title: 'Example project name',
-      github: 'http://github.com',
+      images: [socialImg1, socialImg2, socialImg3, socialImg4],
+      title: 'Social media app',
+      github: 'https://github.com/taine-rasmussen/social-app',
       demo: 'http://github.com/taine-rasmussen'
     },
     {
