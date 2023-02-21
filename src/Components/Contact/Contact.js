@@ -55,17 +55,17 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
-            placeholder='Your full name'
+            placeholder='Your name...'
           />
           <input
             type="email"
             name="user_email"
-            placeholder='Your email here'
+            placeholder='Your email...'
           />
           <textarea
             name="message"
             rows='7'
-            placeholder='Your message'
+            placeholder='Your message...'
           />
           <input
             className='btn btn-primary send'
