@@ -6,7 +6,6 @@ import wordleImg1 from '../../assets/wordle1.png'
 import wordleImg2 from '../../assets/wordle2.png'
 import wordleImg3 from '../../assets/wordle3.png'
 import socialImg1 from '../../assets/social1.png'
-import socialImg2 from '../../assets/social2.png'
 import socialImg3 from '../../assets/social3.png'
 import socialImg4 from '../../assets/social4.png'
 import { ActiveNavContext } from '../../ActiveNavContext'
@@ -23,7 +22,7 @@ const Portfolio = () => {
   const data = [
     {
       id: 1,
-      images: [socialImg1, socialImg2, socialImg3, socialImg4],
+      images: [socialImg1, socialImg3, socialImg4],
       title: 'Social media app',
       github: 'https://github.com/taine-rasmussen/social-app',
       demo: 'http://github.com/taine-rasmussen'
@@ -83,7 +82,7 @@ const Portfolio = () => {
               >
                 <div className='portfolio_item-image' key={i}>
                   {d.images.map((img, i) => (
-                    <SwiperSlide key={i}>
+                    <SwiperSlide key={i} zoom={true}>
                       <img src={img} alt='profile' />
                     </SwiperSlide>
                   ))}
