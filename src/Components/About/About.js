@@ -34,7 +34,7 @@ const About = () => {
               <h5>Experience</h5>
               <small>1 year working </small>
             </article>
-            <a href='#work'>
+            <a href='#work' className='about_card_click'>
               <article className='about_card'>
                 <BsFillFolderFill className='about_icon' />
                 <h5>Projects</h5>

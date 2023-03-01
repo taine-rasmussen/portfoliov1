@@ -37,13 +37,16 @@
 .about_card:hover {
   background: transparent;
   border-color: var(--colour-primary-variant);
-  cursor: pointer;
 }
 
 .about_cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.about_card_click:hover {
+  cursor: pointer !important;
 }
 
 .about_card h5 {
