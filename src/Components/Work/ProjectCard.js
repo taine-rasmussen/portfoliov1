@@ -10,13 +10,13 @@ const ProjectCard = (props) => {
   console.log(proj)
 
   return (
-    <article className='portfolio_item'>
+    <article >
       <Swiper
         pagination={true}
         modules={[Pagination]}
         className='swiper'
       >
-        <div className='portfolio_item-image' key={proj.title}>
+        <div key={proj.title}>
           {proj.images.map((img, i) => (
             <SwiperSlide key={i} zoom={true}>
               <img src={img} alt='profile' />
@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
         </div>
       </Swiper >
       <h3>{proj.title}</h3>
-      <div className='portfolio_item-cta'>
+      <div>
         <a
           href={proj.github}
           className='btn'
