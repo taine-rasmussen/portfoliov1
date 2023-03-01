@@ -37,7 +37,7 @@
 .about_card:hover {
   background: transparent;
   border-color: var(--colour-primary-variant);
-  cursor: default;
+  cursor: pointer;
 }
 
 .about_cards {

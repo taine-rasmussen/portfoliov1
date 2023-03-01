@@ -34,16 +34,13 @@ const About = () => {
               <h5>Experience</h5>
               <small>1 year working </small>
             </article>
-            <article className='about_card'>
-              <a
-                href="https://github.com/taine-rasmussen"
-                target="_blank"
-              >
+            <a href='#work'>
+              <article className='about_card'>
                 <BsFillFolderFill className='about_icon' />
                 <h5>Projects</h5>
                 <small>Take a look at some recent work</small>
-              </a>
-            </article>
+              </article>
+            </a>
           </div>
           <p>
             As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
