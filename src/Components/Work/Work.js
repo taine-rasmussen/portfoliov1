@@ -37,14 +37,14 @@ const Work = () => {
   const data = [
     {
       id: 1,
-      images: [socialImg1, socialImg3, socialImg4],
+      images: [socialImg1, socialImg3],
       title: 'Social media app',
       github: 'https://github.com/taine-rasmussen/social-app',
       demo: 'http://github.com/taine-rasmussen'
     },
     {
       id: 2,
-      images: [wordleImg3, wordleImg1, wordleImg2],
+      images: [wordleImg3, wordleImg1],
       title: 'Wordle clone',
       github: 'https://github.com/taine-rasmussen/not-wordle',
       demo: 'http://github.com/taine-rasmussen'
