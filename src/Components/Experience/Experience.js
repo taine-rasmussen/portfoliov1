@@ -10,18 +10,19 @@ const Experience = () => {
   } = useContext(ActiveNavContext)
 
   const frontEnd = [
-    { language: 'JaveScript', experience: 'Intermidate' },
-    { language: 'React', experience: 'Intermidate' },
-    { language: 'CSS', experience: 'Experienced' },
-    { language: 'HTML', experience: 'Experienced' },
+    { language: 'JaveScript' },
+    { language: 'Redux' },
+    { language: 'React' },
+    { language: 'CSS' },
+    { language: 'HTML' },
   ]
 
   const backEnd = [
-    { language: 'Ruby', experience: 'Basic' },
-    { language: 'Node JS', experience: 'Intermidate' },
-    { language: 'MySQL', experience: 'Basic' },
-    { language: 'Postgres', experience: 'Basic' },
-    { language: 'MongoDB', experience: 'Basic' }
+    { language: 'Ruby' },
+    { language: 'Node JS' },
+    { language: 'MySQL' },
+    { language: 'Postgres' },
+    { language: 'MongoDB' }
   ]
 
 
@@ -39,10 +40,9 @@ const Experience = () => {
             {frontEnd.map((info, i) => {
               return (
                 <article className='experience_details' key={i}>
-                  <BsPatchCheckFill className='experience_details-icon' key={info.experience} />
+                  <BsPatchCheckFill className='experience_details-icon' />
                   <div key={info.language}>
                     <h4>{info.language}</h4>
-                    <small className='text-light' key={info.language}>{info.experience}</small>
                   </div>
                 </article>
               )
@@ -55,10 +55,9 @@ const Experience = () => {
             {backEnd.map((info, i) => {
               return (
                 <article className='experience_details' key={i}>
-                  <BsPatchCheckFill className='experience_details-icon' key={info.experience} />
+                  <BsPatchCheckFill className='experience_details-icon' />
                   <div>
                     <h4>{info.language}</h4>
-                    <small className='text-light' >{info.experience}</small>
                   </div>
                 </article>
               )

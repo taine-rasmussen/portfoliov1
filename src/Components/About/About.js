@@ -34,7 +34,7 @@ const About = () => {
               <h5>Experience</h5>
               <small>1 year working </small>
             </article>
-            <article 
+            <article
               className='about_card hover'
             >
               <a
@@ -48,7 +48,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            As a recent arrival to London, I am a highly motivated Full Stack developer with a solid foundation in technology acquired through a bootcamp and professional experience gained while working for a SaaS company in New Zealand. I am eager to explore new opportunities and am open to discussing potential job openings          
+            As a recent arrival to London, I am a motivated Full Stack developer with a solid foundation in technology acquired through a bootcamp and professional experience gained while working for a SaaS company in New Zealand. I am eager to explore new opportunities and am open to discussing potential job openings
 
             this is still to robotic - make it more human
           </p>
