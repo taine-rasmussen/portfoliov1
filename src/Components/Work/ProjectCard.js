@@ -1,8 +1,8 @@
-import { Navigation } from "swiper";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import './Work.css'
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const ProjectCard = (props) => {
   const {
@@ -19,13 +19,17 @@ const ProjectCard = (props) => {
   return (
     <article className='project_card_container'>
       <Swiper
-        navigation={true}
-        modules={[Navigation]}
+        modules={[Pagination]}
+        pagination={true}
         className="mySwiper"
       >
         <div className='project_item_image' key={title}>
           {images.map((img, i) => (
-            <SwiperSlide key={i} zoom={true} >
+            <SwiperSlide
+              className='swiper'
+              zoom={true}
+              key={i}
+            >
               <img src={img} alt='profile' />
             </SwiperSlide>
           ))}

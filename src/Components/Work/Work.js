@@ -95,7 +95,7 @@ const Work = () => {
       <section className='wrapper_container'>
         <h5>My recent work</h5>
         <h2>Portfolio</h2>
-        <div className='skills_wrapper'>
+        <div className='skills_wrapper no_hover'>
           {data.map((proj) => {
             return (
               <ProjectCard proj={proj} />

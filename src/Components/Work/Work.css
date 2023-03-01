@@ -59,12 +59,19 @@
 }
 
 .swiper {
-  width: 250px;
-  height: 175px;
-  border-radius: 1rem;
-  border: 2px solid var(--colour-white);
-  background: 0;
+  width: 275px;
+  /* min-height: max-content; */
+  height: 300px;
   transition: var(--transition);
+}
+
+.swiper img {
+  border: 1px solid var(--colour-white);
+  border-radius: 0.5rem;
+}
+
+.swiper:hover {
+  cursor: grabbing;
 }
 
 .project_card_container {
@@ -83,11 +90,19 @@
   margin: 1rem 0;
 }
 
+.cta_wrapper h3 {
+  color: var(--colour-white);
+}
+
 .cta_buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.no_hover:hover {
+  background: var(--colour-bg-variant);
 }
 
 /* .swiper-slide {
