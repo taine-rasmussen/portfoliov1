@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .wrapper_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* height: 100%; */
-  /* border: 2px solid #000; */
+  border: 2px solid #000;
   width: 50%;
 }
 
@@ -20,12 +19,15 @@
   justify-content: space-between;
   flex-wrap: wrap;
   background: var(--colour-bg-variant);
-  padding: 2.4rem 5rem;
+  padding: 2.25rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
   height: max-content;
-  gap: 8rem;
+  gap: 1rem;
+  width: 80%;
+  height: 50%;
+  font-size: 1rem;
 }
 
 .skills_wrapper:hover {
@@ -59,7 +61,7 @@
 .swiper {
   width: 250px;
   height: 175px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 2px solid var(--colour-white);
   background: 0;
   transition: var(--transition);
@@ -77,12 +79,15 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
 }
 
 .cta_buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* .swiper-slide {
