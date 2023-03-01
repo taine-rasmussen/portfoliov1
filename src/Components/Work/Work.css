@@ -73,6 +73,18 @@
   overflow: hidden;
 }
 
+.cta_wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.cta_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /* .swiper-slide {
   background: 0;
   text-align: center;

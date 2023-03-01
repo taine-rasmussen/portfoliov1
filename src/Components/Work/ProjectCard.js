@@ -8,7 +8,8 @@ const ProjectCard = (props) => {
   const {
     proj: {
       images,
-      title
+      title,
+      github
     },
     proj
   } = props;
@@ -36,19 +37,20 @@ const ProjectCard = (props) => {
 
 
 
-
-      <h3>{proj.title}</h3>
-      <div>
-        <a
-          href={proj.github}
-          className='btn'
-          target='_blank'
-        >Github</a>
-        <a
-          href='http://github.com/taine-rasmussen'
-          className='btn btn-primary'
-          target='_blank'
-        >Live Demo</a>
+      <div className='cta_wrapper'>
+        <h3>{title}</h3>
+        <div className='cta_buttons'>
+          <a
+            href={github}
+            className='btn'
+            target='_blank'
+          >Github</a>
+          <a
+            href='http://github.com/taine-rasmussen'
+            className='btn btn-primary'
+            target='_blank'
+          >Live Demo</a>
+        </div>
       </div>
     </article>
   )
