@@ -35,11 +35,11 @@ const Work = () => {
       <section className='wrapper_container'>
         <h5>What skills I have</h5>
         <h2>My Experience</h2>
-        <div>
+        <div className='work_skills_container'>
           {skills.map((skill) => (
             <article className='work_details' key={skill.language}>
               <h4>{skill.language}</h4>
-              <BsPatchCheckFill className='work_details-icon' />
+              <BsPatchCheckFill className='work_details_icon' />
             </article>
           ))}
         </div>
