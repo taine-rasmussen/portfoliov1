@@ -17,21 +17,25 @@
 .skills_wrapper {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: var(--colour-bg-variant);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
-  width: 75%;
   border: 1px solid transparent;
   transition: var(--transition);
-  height: 35%;
-  gap: 2rem;
+  height: max-content;
+  gap: 8rem;
 }
 
 .skills_wrapper:hover {
   background: transparent;
   border-color: var(--colour-primary-variant);
   cursor: default;
+}
+
+.skills_wrapper h3 {
+  color: var(--colour-primary);
 }
 
 .skills_container {
@@ -48,7 +52,6 @@
   margin: 0.5rem 0rem;
 }
 
-.skills_details_icon {
-  margin-top: 6px;
+.skills_details-icon {
   color: var(--colour-primary);
 }
