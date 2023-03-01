@@ -12,17 +12,19 @@ const Experience = () => {
   const frontEnd = [
     { language: 'JaveScript' },
     { language: 'Redux' },
+    { language: 'MaterialUi' },
     { language: 'React' },
     { language: 'CSS' },
     { language: 'HTML' },
   ]
 
   const backEnd = [
-    { language: 'Ruby' },
-    { language: 'Node JS' },
-    { language: 'MySQL' },
+    { language: 'Rails' },
+    { language: 'Node.js' },
+    { language: 'SQL' },
     { language: 'Postgres' },
-    { language: 'MongoDB' }
+    { language: 'MongoDB' },
+    { language: 'Express' },
   ]
 
 

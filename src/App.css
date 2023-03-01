@@ -66,7 +66,6 @@ section {
   margin-top: 8rem;
   height: 100vh;
 }
-/* height is messing up media quries but without it experince containers don't work */
 
 section > h2,
 section > h5 {
