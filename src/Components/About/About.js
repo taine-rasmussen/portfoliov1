@@ -34,9 +34,7 @@ const About = () => {
               <h5>Experience</h5>
               <small>1 year working </small>
             </article>
-            <article
-              className='about_card hover'
-            >
+            <article className='about_card'>
               <a
                 href="https://github.com/taine-rasmussen"
                 target="_blank"
