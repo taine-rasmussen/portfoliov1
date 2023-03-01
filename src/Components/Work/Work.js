@@ -1,6 +1,6 @@
 import { ActiveNavContext } from '../../ActiveNavContext'
 import { BsPatchCheckFill } from 'react-icons/bs'
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 
 import Experience from '../Experience/Experience'
 
@@ -11,13 +11,16 @@ const Work = () => {
     setActiveNav
   } = useContext(ActiveNavContext)
 
-  const skills = [
+  const frontEnd = [
     { language: 'JaveScript' },
     { language: 'Redux' },
     { language: 'MaterialUi' },
     { language: 'React' },
     { language: 'CSS' },
     { language: 'HTML' },
+  ]
+
+  const backEnd = [
     { language: 'Rails' },
     { language: 'Node.js' },
     { language: 'SQL' },
@@ -32,22 +35,42 @@ const Work = () => {
       onMouseEnter={() => { setActiveNav('work') }}
       className='work_container'
     >
-      <section className='wrapper_container'>
+      <section className='wrapper_container skills_contianer'>
         <h5>What skills I have</h5>
         <h2>My Experience</h2>
-        <div className='work_skills_container'>
-          {skills.map((skill) => (
-            <article className='work_details' key={skill.language}>
-              <h4>{skill.language}</h4>
-              <BsPatchCheckFill className='work_details_icon' />
-            </article>
-          ))}
+        <div className='skills_wrapper'>
+          <div className='skills_container'>
+            <h3>Frontend Development</h3>
+            <div className='skills_content'>
+              {frontEnd.map((info, i) => {
+                return (
+                  <article className='skills_details' key={i}>
+                    <BsPatchCheckFill className='skills_details-icon' />
+                    <div>
+                      <h4>{info.language}</h4>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          </div>
+          <div className='skills_container'>
+            <h3>Backend Development</h3>
+            <div className='skills_content'>
+              {backEnd.map((info, i) => {
+                return (
+                  <article className='skills_details' key={i}>
+                    <BsPatchCheckFill className='skills_details-icon' />
+                    <div>
+                      <h4>{info.language}</h4>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+          </div>
         </div>
       </section>
-
-
-
-      {/* <Experience /> */}
 
       <section className='wrapper_container'>
         <h5>My recent work</h5>
