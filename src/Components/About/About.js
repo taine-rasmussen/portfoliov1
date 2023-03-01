@@ -43,14 +43,12 @@ const About = () => {
               >
                 <BsFillFolderFill className='about_icon' />
                 <h5>Projects</h5>
-                <small>30+ completed projects  </small>
+                <small>Take a look at some recent work</small>
               </a>
             </article>
           </div>
           <p>
-            As a recent arrival to London, I am a motivated Full Stack developer with a solid foundation in technology acquired through a bootcamp and professional experience gained while working for a SaaS company in New Zealand. I am eager to explore new opportunities and am open to discussing potential job openings
-
-            this is still to robotic - make it more human
+            As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
           </p>
           <a
             className='btn btn-primary'
