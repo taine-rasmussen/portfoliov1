@@ -1,9 +1,14 @@
 import { ActiveNavContext } from '../../ActiveNavContext'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import { useContext } from 'react'
+import ProjectCard from './ProjectCard'
 
-import Experience from '../Experience/Experience'
-
+import wordleImg1 from '../../assets/wordle1.png'
+import wordleImg2 from '../../assets/wordle2.png'
+import wordleImg3 from '../../assets/wordle3.png'
+import socialImg1 from '../../assets/social1.png'
+import socialImg3 from '../../assets/social3.png'
+import socialImg4 from '../../assets/social4.png'
 import './Work.css'
 
 const Work = () => {
@@ -27,6 +32,23 @@ const Work = () => {
     { language: 'Postgres' },
     { language: 'MongoDB' },
     { language: 'Express' },
+  ];
+
+  const data = [
+    {
+      id: 1,
+      images: [socialImg1, socialImg3, socialImg4],
+      title: 'Social media app',
+      github: 'https://github.com/taine-rasmussen/social-app',
+      demo: 'http://github.com/taine-rasmussen'
+    },
+    {
+      id: 2,
+      images: [wordleImg3, wordleImg1, wordleImg2],
+      title: 'Wordle clone',
+      github: 'https://github.com/taine-rasmussen/not-wordle',
+      demo: 'http://github.com/taine-rasmussen'
+    },
   ]
 
   return (
@@ -75,8 +97,13 @@ const Work = () => {
       <section className='wrapper_container'>
         <h5>My recent work</h5>
         <h2>Portfolio</h2>
-        <div>
-          Projects go here
+        <div className='skills_wrapper'>
+          {data.map((proj) => {
+            return (
+              <ProjectCard proj={proj} />
+            )
+          })}
+
         </div>
       </section>
     </section>
