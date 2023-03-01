@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ActiveNavContext } from '../../ActiveNavContext'
 import './Work.css'
 
 const Work = () => {
-  return (
-    <div>
+  const {
+    setActiveNav
+  } = useContext(ActiveNavContext)
 
-    </div>
+  return (
+    <section
+      id='work'
+      onMouseEnter={() => { setActiveNav('work') }}
+    >
+
+    </section>
   )
 }
 

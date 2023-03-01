@@ -26,15 +26,9 @@ const Nav = () => {
         className={activeNav === 'about' ? 'active' : ''}
       ><AiOutlineUser /></a>
       <a
-        href='#experience'
-        onClick={() => setActiveNav('experience')}
-        className={activeNav === 'experience' ? 'active' : ''}
-      >
-        <BiBook /></a>
-      <a
-        href='#portfolio'
-        onClick={() => setActiveNav('portfolio')}
-        className={activeNav === 'portfolio' ? 'active' : ''}
+        href='#work'
+        onClick={() => setActiveNav('work')}
+        className={activeNav === 'work' ? 'active' : ''}
       >
         <CgWebsite /></a>
       <a
