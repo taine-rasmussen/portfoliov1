@@ -39,15 +39,6 @@
   justify-content: center;
 }
 
-.swiper {
-  width: 250px;
-  height: 175px;
-  border-radius: 2rem;
-  border: 2px solid var(--colour-white);
-  background: 0;
-  transition: var(--transition);
-}
-
 .swiper-slide {
   background: 0;
   text-align: center;

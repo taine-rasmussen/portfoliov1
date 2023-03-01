@@ -4,11 +4,9 @@ import { useContext } from 'react'
 import ProjectCard from './ProjectCard'
 
 import wordleImg1 from '../../assets/wordle1.png'
-import wordleImg2 from '../../assets/wordle2.png'
 import wordleImg3 from '../../assets/wordle3.png'
 import socialImg1 from '../../assets/social1.png'
 import socialImg3 from '../../assets/social3.png'
-import socialImg4 from '../../assets/social4.png'
 import './Work.css'
 
 const Work = () => {

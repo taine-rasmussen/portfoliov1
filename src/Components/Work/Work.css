@@ -55,3 +55,38 @@
 .skills_details-icon {
   color: var(--colour-primary);
 }
+
+.swiper {
+  width: 250px;
+  height: 175px;
+  border-radius: 2rem;
+  border: 2px solid var(--colour-white);
+  background: 0;
+  transition: var(--transition);
+}
+
+.project_card_container {
+}
+
+.project_item_image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+/* .swiper-slide {
+  background: 0;
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */

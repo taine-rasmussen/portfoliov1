@@ -4,26 +4,37 @@ import './Work.css'
 
 const ProjectCard = (props) => {
   const {
+    proj: {
+      images,
+      title
+    },
     proj
   } = props;
 
   console.log(proj)
 
   return (
-    <article >
+    <article className='project_card_container'>
       <Swiper
         pagination={true}
         modules={[Pagination]}
         className='swiper'
       >
-        <div key={proj.title}>
-          {proj.images.map((img, i) => (
-            <SwiperSlide key={i} zoom={true}>
+        <div className='project_item_image' key={title}>
+          {images.map((img, i) => (
+            <SwiperSlide key={i} zoom={true} >
               <img src={img} alt='profile' />
             </SwiperSlide>
           ))}
         </div>
       </Swiper >
+
+
+
+
+
+
+
       <h3>{proj.title}</h3>
       <div>
         <a
