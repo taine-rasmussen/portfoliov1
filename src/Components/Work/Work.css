@@ -15,7 +15,8 @@
 .skills_wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   background: var(--colour-bg-variant);
   padding: 2.25rem;
@@ -23,9 +24,10 @@
   border: 1px solid transparent;
   transition: var(--transition);
   height: max-content;
-  gap: 1rem;
+  gap: 4rem;
   width: 80%;
-  height: 50%;
+  min-height: max-content;
+  /* height: 45%; */
   font-size: 1rem;
 }
 
