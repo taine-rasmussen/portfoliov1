@@ -1,13 +1,17 @@
-import React, { useContext } from 'react'
-import './Header.css'
-import CTA from './CTA'
-import Socials from './Socials'
 import { ActiveNavContext } from '../../ActiveNavContext'
+import { AiOutlineDown } from 'react-icons'
+import React, { useContext } from 'react'
+import Socials from './Socials'
+import CTA from './CTA'
+import './Header.css'
 
 const Header = () => {
   const {
-    setActiveNav
+    setActiveNav,
+    activeNav
   } = useContext(ActiveNavContext)
+
+  console.log(activeNav)
 
   return (
     <header>
@@ -21,7 +25,14 @@ const Header = () => {
         <CTA />
         <Socials />
 
+
+
         <a href='#about' className="scroll_down">Scroll Down</a>
+
+        <div className='scroll_icons'>
+          <AiOutlineDown />
+
+        </div>
       </div>
     </header>
   )
