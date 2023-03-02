@@ -36,8 +36,8 @@
 }
 
 .about_card:hover {
-  background: transparent;
-  border-color: var(--colour-primary-variant);
+  box-shadow: 0px 0px 10px var(--colour-bg), 0 7.15px 12.5px 0 var(--colour-bg);
+  transition: var(--transition);
 }
 
 .about_cards {
@@ -49,6 +49,12 @@
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 0px 0px #000, 0 0px 2.5px 0 #000;
+  border: 1px solid transparent;
+}
+
+.about_cards:hover {
+  transition: var(--transition);
+  border-color: var(--colour-primary-variant);
 }
 
 .about_card_click:hover {
