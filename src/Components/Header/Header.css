@@ -62,9 +62,10 @@ header {
 
 /*  --- Scroll down --- */
 .scroll_down {
-  position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
+  position: fixed;
+  /* right: -2.3rem; */
+  top: 90%;
+  right: 3%;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 1rem;
