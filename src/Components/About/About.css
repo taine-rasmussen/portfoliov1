@@ -86,6 +86,11 @@
   color: var(--colour-light);
 }
 
+.press_event:active {
+  transition: var(--transition);
+  transform: scale(0.95);
+}
+
 @media screen and (max-width: 1024px) {
   .about_container {
     grid-template-columns: 1fr;
