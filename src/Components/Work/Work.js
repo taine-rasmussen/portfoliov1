@@ -60,7 +60,7 @@ const Work = () => {
         <h2>My Experience</h2>
         <div className='skills_wrapper'>
           <div className='skills_container'>
-            <h3>Frontend Development</h3>
+            <h3 className='divider_bottom'>Frontend Development</h3>
             <div className='skills_content'>
               {frontEnd.map((info, i) => {
                 return (
@@ -75,7 +75,7 @@ const Work = () => {
             </div>
           </div>
           <div className='skills_container'>
-            <h3>Backend Development</h3>
+            <h3 className='divider_bottom'>Backend Development</h3>
             <div className='skills_content'>
               {backEnd.map((info, i) => {
                 return (

@@ -41,6 +41,11 @@
   color: var(--colour-primary);
 }
 
+.divider_bottom {
+  padding-bottom: 1rem;
+  border-bottom: 2.5px solid var(--colour-light);
+}
+
 .skills_container {
   display: flex;
   flex-direction: column;
