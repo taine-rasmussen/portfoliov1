@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
-import './About.css'
-import profileImg from '../../assets/profile.jpeg'
-import { FaAward } from 'react-icons/fa'
-import { BsFillFolderFill } from 'react-icons/bs'
 import { ActiveNavContext } from '../../ActiveNavContext'
+import profileImg from '../../assets/profile.jpeg'
+import { BsFillFolderFill } from 'react-icons/bs'
+import { Parallax } from 'react-parallax';
+import React, { useContext } from 'react'
+import { FaAward } from 'react-icons/fa'
+import './About.css'
 
 
 
@@ -42,9 +43,11 @@ const About = () => {
               </article>
             </a>
           </div>
-          <p>
-            As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
-          </p>
+          <Parallax blur={10} strength={200}>
+            <p>
+              As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
+            </p>
+          </Parallax>
           <a
             className='btn btn-primary'
             href='#contact'
