@@ -65,20 +65,17 @@
 }
 
 .swiper img {
-  border: 1px solid var(--colour-white);
+  padding: 5px;
   border-radius: 0.5rem;
+}
+
+.mySwiper {
+  box-shadow: 0px 0px 2.5px var(--colour-bg), 0 5px 10px 0 var(--colour-bg);
+  border-radius: 1px;
 }
 
 .swiper:hover {
   cursor: grabbing;
-}
-
-.project_card_container {
-}
-
-.project_item_image {
-  border-radius: 1.5rem;
-  overflow: hidden;
 }
 
 .cta_wrapper {
