@@ -30,6 +30,11 @@ header {
   font-size: 1.5rem;
 }
 
+.header_socials a:active {
+  transition: var(--transition);
+  transform: scale(0.8);
+}
+
 .header_socials::after {
   content: "";
   width: 1px;
