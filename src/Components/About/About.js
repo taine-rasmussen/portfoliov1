@@ -1,8 +1,9 @@
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import { ParallaxProvider, useParallax } from 'react-scroll-parallax'
 import { ActiveNavContext } from '../../ActiveNavContext'
+
 import profileImg from '../../assets/profile.jpeg'
 import { BsFillFolderFill } from 'react-icons/bs'
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import { FaAward } from 'react-icons/fa'
 import './About.css'
 
@@ -11,7 +12,12 @@ import './About.css'
 const About = () => {
   const {
     setActiveNav
-  } = useContext(ActiveNavContext)
+  } = useContext(ActiveNavContext);
+
+  // const parallax = useParallax({
+  //   speed: -10,
+  // });
+  const { ref } = useParallax({ speed: 10 });
 
 
   return (
@@ -45,10 +51,11 @@ const About = () => {
           </div>
 
 
-
-          <p>
+          <p ref={ref}>
             As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
-              </p>
+          </p>
+
+
           <a
             className='btn btn-primary'
             href='#contact'

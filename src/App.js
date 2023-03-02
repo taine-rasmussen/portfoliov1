@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from 'react'
 import { ActiveNavContext } from './ActiveNavContext'
+import { ParallaxProvider, useParallax } from 'react-scroll-parallax'
+
 
 // Components
 import Header from './Components/Header/Header'
@@ -14,13 +16,15 @@ function App() {
 
   return (
     <>
-      <ActiveNavContext.Provider value={{ activeNav, setActiveNav }}>
-        <Header />
-        <Nav />
-        <About />
-        <Work />
-        <Contact />
-      </ActiveNavContext.Provider>
+      <ParallaxProvider>
+        <ActiveNavContext.Provider value={{ activeNav, setActiveNav }}>
+          <Header />
+          <Nav />
+          <About />
+          <Work />
+          <Contact />
+        </ActiveNavContext.Provider>
+      </ParallaxProvider>
     </>
   );
 }
