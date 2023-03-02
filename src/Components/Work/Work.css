@@ -94,6 +94,11 @@
   border-bottom-right-radius: 25px;
 }
 
+.mySwiper:hover {
+  box-shadow: 0px 0px 15px var(--colour-bg), 0 10px 12.5px 0 var(--colour-bg);
+  transition: var(--transition);
+}
+
 .swiper:hover {
   cursor: grabbing;
 }
@@ -110,6 +115,11 @@
   box-shadow: 0 10px 15px 0 var(--colour-bg);
 }
 
+.cta_wrapper:hover {
+  box-shadow: 0px 0px 15px var(--colour-bg), 0 10px 12.5px 0 var(--colour-bg);
+  transition: var(--transition);
+}
+
 .cta_wrapper h3 {
   color: var(--colour-white);
 }
@@ -120,25 +130,3 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
-
-.no_hover:hover {
-  background: var(--colour-bg-variant);
-}
-
-/* .swiper-slide {
-  background: 0;
-  text-align: center;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-} */
