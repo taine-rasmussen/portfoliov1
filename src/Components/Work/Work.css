@@ -32,7 +32,6 @@
 }
 
 .skills_wrapper:hover {
-  background: transparent;
   border-color: var(--colour-primary-variant);
   cursor: default;
 }
