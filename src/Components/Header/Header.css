@@ -10,11 +10,6 @@ header {
   position: relative;
 }
 
-.header_container a:active {
-  transition: var(--transition);
-  transform: scale(0.9);
-}
-
 /* --- CTA --- */
 .cta {
   margin-top: 2.5rem;
@@ -45,6 +40,11 @@ header {
   width: 1px;
   height: 7rem;
   background-color: var(--colour-primary);
+}
+
+.header_socials a:active {
+  transition: var(--transition);
+  transform: scale(0.9);
 }
 
 /* --- ME --- */
