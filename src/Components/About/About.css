@@ -71,6 +71,10 @@
   margin-bottom: 1rem;
 }
 
+.about_content {
+  z-index: -100;
+}
+
 .about_content p {
   margin: 2rem 0 2.6rem;
   color: var(--colour-light);

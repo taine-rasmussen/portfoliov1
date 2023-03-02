@@ -1,4 +1,4 @@
-import { ParallaxProvider, useParallax } from 'react-scroll-parallax'
+import { ParallaxProvider, useParallax, Parallax } from 'react-scroll-parallax'
 import { ActiveNavContext } from '../../ActiveNavContext'
 
 import profileImg from '../../assets/profile.jpeg'
@@ -17,7 +17,7 @@ const About = () => {
   // const parallax = useParallax({
   //   speed: -10,
   // });
-  const { ref } = useParallax({ speed: 10 });
+  // const { ref } = useParallax({ speed: 10 });
 
 
   return (
@@ -34,35 +34,39 @@ const About = () => {
           </div>
 
         </div>
-        <div className='about_content'>
-          <div className='about_cards'>
-            <article className='about_card'>
-              <FaAward className='about_icon' />
-              <h5>Experience</h5>
-              <small>1 year working </small>
-            </article>
-            <a href='#work' className='about_card_click'>
+        <Parallax
+          translateY={[-10, 10]}
+          speed={5}
+        >
+          <div className='about_content'>
+            <div className='about_cards'>
               <article className='about_card'>
-                <BsFillFolderFill className='about_icon' />
-                <h5>Projects</h5>
-                <small>Take a look at some recent work</small>
+                <FaAward className='about_icon' />
+                <h5>Experience</h5>
+                <small>1 year working </small>
               </article>
-            </a>
-          </div>
+              <a href='#work' className='about_card_click'>
+                <article className='about_card'>
+                  <BsFillFolderFill className='about_icon' />
+                  <h5>Projects</h5>
+                  <small>Take a look at some recent work</small>
+                </article>
+              </a>
+            </div>
 
-
-          <p ref={ref}>
-            As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
+            <p>
+              As a passionate Full Stack developer with a drive for learning and improving, I possess a strong foundation of skills acquired through completing a web development bootcamp and gaining professional experience while working for a SaaS company in New Zealand over the past 14 months. Recently relocating to London, I am eager to further expand my skill set and take the next step in my career through new opportunities.
           </p>
 
 
-          <a
-            className='btn btn-primary'
-            href='#contact'
-          >
-            Lets talk
+            <a
+              className='btn btn-primary'
+              href='#contact'
+            >
+              Lets talk
           </a>
-        </div>
+          </div>
+        </Parallax>
       </div>
     </section >
   )
