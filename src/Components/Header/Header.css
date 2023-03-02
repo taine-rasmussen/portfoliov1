@@ -66,22 +66,10 @@ header {
   position: fixed;
   top: 90%;
   right: 3%;
-}
-.scroll_down a {
-  /* position: fixed;
-  top: 90%;
-  right: 3%; */
-  rotate: 90deg;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.scroll_icons {
+  font-size: 2rem;
   display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  color: var(--colour-primary);
   transition: var(--transition);
+  color: var(--colour-primary);
 }
 
 .up_arrow {

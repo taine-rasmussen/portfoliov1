@@ -1,6 +1,6 @@
 import { ActiveNavContext } from '../../ActiveNavContext'
 import { AiOutlineLeft } from 'react-icons/ai'
-import React, { useContext } from 'react'
+import { useContext, useMemo } from 'react'
 import Socials from './Socials'
 import CTA from './CTA'
 import './Header.css'
@@ -11,7 +11,19 @@ const Header = () => {
     activeNav
   } = useContext(ActiveNavContext)
 
-  console.log(activeNav)
+  const allNavOptions = ['#', 'about', 'work', 'contact']
+
+  const previousOption = useMemo(
+    () => {
+
+    }, [activeNav]
+  );
+
+  const nextOption = useMemo(
+    () => {
+
+    }, [activeNav]
+  );
 
   return (
     <>
@@ -30,11 +42,17 @@ const Header = () => {
 
       <div className='scroll_container'>
         {activeNav === '#' ? (
-          <a href='#about' className="scroll_down">Scroll Down</a>
+          <a href='#about'>
+            <AiOutlineLeft className='down_arrow' />
+          </a>
         ) : (
           <div className='scroll_icons'>
-            <AiOutlineLeft className='up_arrow' />
-            <AiOutlineLeft className='down_arrow' />
+            <a>
+              <AiOutlineLeft className='up_arrow' />
+            </a>
+            <a>
+              <AiOutlineLeft className='down_arrow' />
+            </a>
           </div>
         )
         }
@@ -44,7 +62,3 @@ const Header = () => {
 }
 
 export default Header
-
-
-// if mouse enters a div update nav bar state
-// will need global state - useContext?
