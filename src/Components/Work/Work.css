@@ -72,6 +72,8 @@
 .mySwiper {
   box-shadow: 0px 0px 2.5px var(--colour-bg), 0 5px 10px 0 var(--colour-bg);
   border-radius: 1px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .swiper:hover {
@@ -84,6 +86,10 @@
   flex-direction: column;
   align-items: center;
   margin: 1rem 0;
+  padding-bottom: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 10px 15px 0 var(--colour-bg);
 }
 
 .cta_wrapper h3 {

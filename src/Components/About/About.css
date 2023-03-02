@@ -32,6 +32,7 @@
   text-align: center;
   transition: var(--transition);
   width: 15rem;
+  box-shadow: 0px 0px 2.5px var(--colour-bg), 0 5px 10px 0 var(--colour-bg);
 }
 
 .about_card:hover {
@@ -41,8 +42,13 @@
 
 .about_cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  background: var(--colour-bg-variant);
+  width: max-content;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 0px #000, 0 0px 2.5px 0 #000;
 }
 
 .about_card_click:hover {
