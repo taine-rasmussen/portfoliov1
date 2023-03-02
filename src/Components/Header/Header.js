@@ -15,15 +15,21 @@ const Header = () => {
 
   const previousOption = useMemo(
     () => {
+      const currentIndex = allNavOptions.indexOf(activeNav)
+      return allNavOptions[currentIndex - 1]
 
     }, [activeNav]
   );
 
   const nextOption = useMemo(
     () => {
+      const currentIndex = allNavOptions.indexOf(activeNav)
+      return allNavOptions[currentIndex + 1]
 
     }, [activeNav]
   );
+
+  console.log(activeNav)
 
   return (
     <>
@@ -47,10 +53,10 @@ const Header = () => {
           </a>
         ) : (
           <div className='scroll_icons'>
-            <a>
+            <a href={previousOption}>
               <AiOutlineLeft className='up_arrow' />
             </a>
-            <a>
+            <a href={nextOption}>
               <AiOutlineLeft className='down_arrow' />
             </a>
           </div>

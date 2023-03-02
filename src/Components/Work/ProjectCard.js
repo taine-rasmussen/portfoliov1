@@ -14,8 +14,6 @@ const ProjectCard = (props) => {
     proj
   } = props;
 
-  console.log(proj)
-
   return (
     <article className='project_card_container'>
       <Swiper
