@@ -10,6 +10,11 @@ header {
   position: relative;
 }
 
+.header_container a:active {
+  transition: var(--transition);
+  transform: scale(0.9);
+}
+
 /* --- CTA --- */
 .cta {
   margin-top: 2.5rem;
@@ -30,10 +35,10 @@ header {
   font-size: 1.5rem;
 }
 
-.header_socials a:active {
+/* .header_socials a:active {
   transition: var(--transition);
   transform: scale(0.8);
-}
+} */
 
 .header_socials::after {
   content: "";
