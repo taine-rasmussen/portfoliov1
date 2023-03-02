@@ -61,14 +61,54 @@ header {
 }
 
 /*  --- Scroll down --- */
-.scroll_down {
+
+.scroll_container {
   position: fixed;
-  /* right: -2.3rem; */
   top: 90%;
   right: 3%;
-  transform: rotate(90deg);
+}
+.scroll_down a {
+  /* position: fixed;
+  top: 90%;
+  right: 3%; */
+  rotate: 90deg;
   font-weight: 300;
   font-size: 1rem;
+}
+
+.scroll_icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: var(--colour-primary);
+  transition: var(--transition);
+}
+
+.up_arrow {
+  rotate: 90deg;
+}
+
+.up_arrow:hover {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.up_arrow:active {
+  transition: var(--transition);
+  transform: scale(0.6);
+}
+
+.down_arrow {
+  rotate: -90deg;
+}
+
+.down_arrow:hover {
+  cursor: pointer;
+}
+
+.down_arrow:active {
+  transition: var(--transition);
+  transform: scale(0.6);
 }
 
 /*  --- media quires --- */

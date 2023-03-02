@@ -1,5 +1,5 @@
 import { ActiveNavContext } from '../../ActiveNavContext'
-import { AiOutlineDown } from 'react-icons'
+import { AiOutlineLeft } from 'react-icons/ai'
 import React, { useContext } from 'react'
 import Socials from './Socials'
 import CTA from './CTA'
@@ -14,27 +14,32 @@ const Header = () => {
   console.log(activeNav)
 
   return (
-    <header>
-      <div
-        className="container header_container"
-        onMouseEnter={() => { setActiveNav('#') }}
-      >
-        <h5>Hello I'm</h5>
-        <h1>Taine Rasmussen</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
-        <CTA />
-        <Socials />
-
-
-
-        <a href='#about' className="scroll_down">Scroll Down</a>
-
-        <div className='scroll_icons'>
-          <AiOutlineDown />
-
+    <>
+      <header>
+        <div
+          className="container header_container"
+          onMouseEnter={() => { setActiveNav('#') }}
+        >
+          <h5>Hello I'm</h5>
+          <h1>Taine Rasmussen</h1>
+          <h5 className="text-light">Fullstack Developer</h5>
+          <CTA />
+          <Socials />
         </div>
-      </div>
-    </header>
+      </header>
+
+      <div className='scroll_container'>
+        {activeNav === '#' ? (
+          <a href='#about' className="scroll_down">Scroll Down</a>
+        ) : (
+          <div className='scroll_icons'>
+            <AiOutlineLeft className='up_arrow' />
+            <AiOutlineLeft className='down_arrow' />
+          </div>
+        )
+        }
+      </div >
+    </>
   )
 }
 
