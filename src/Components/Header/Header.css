@@ -30,21 +30,16 @@ header {
   font-size: 1.5rem;
 }
 
-/* .header_socials a:active {
+.header_socials a:active {
   transition: var(--transition);
   transform: scale(0.8);
-} */
+}
 
 .header_socials::after {
   content: "";
   width: 1px;
   height: 7rem;
   background-color: var(--colour-primary);
-}
-
-.header_socials a:active {
-  transition: var(--transition);
-  transform: scale(0.9);
 }
 
 /* --- ME --- */
@@ -61,42 +56,13 @@ header {
 }
 
 /*  --- Scroll down --- */
-
-.scroll_container {
-  position: fixed;
-  top: 90%;
-  right: 3%;
-  font-size: 2rem;
-  display: flex;
-  transition: var(--transition);
-  color: var(--colour-primary);
-}
-
-.up_arrow {
-  rotate: 90deg;
-}
-
-.up_arrow:hover {
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.up_arrow:active {
-  transition: var(--transition);
-  transform: scale(0.6);
-}
-
-.down_arrow {
-  rotate: -90deg;
-}
-
-.down_arrow:hover {
-  cursor: pointer;
-}
-
-.down_arrow:active {
-  transition: var(--transition);
-  transform: scale(0.6);
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 /*  --- media quires --- */
